@@ -24,7 +24,7 @@ title: 技术支持
 <p> 
 email: zch86806458@163.com   
 <p> 
-微信: M-Byun 
+微信: M-Byun(设置权限了，可以邮件先联系我哦)
 <p> 
 
 {% include comments.html %}
