@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 第一个Blog，记录美好生活！
-description: 今天是2022-07-13,天气非常热。
+description: 今天是2022-07-12,天气非常热。
 tag: 日记
 ---
 
