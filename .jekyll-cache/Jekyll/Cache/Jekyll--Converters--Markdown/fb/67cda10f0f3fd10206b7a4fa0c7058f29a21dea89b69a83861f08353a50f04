@@ -1,0 +1,37 @@
+I"J<h2 id="1天气">1.天气</h2>
+<p>非常不是那么的炎热了啊，可以出去跑跑了。</p>
+
+<h2 id="2笔记">2.笔记</h2>
+<h3 id="1事件处理">1.事件处理</h3>
+<p><code class="language-plaintext highlighter-rouge">&lt;button @click="showInfo2($event,66)"&gt;点我提示信息2&lt;/button&gt;</code></p>
+
+<p>@简写为函数的标识符，原型为v-on。将调用Vue对象中的函数，showInfo2可以不加括号，表示没有参数(但是默认会存在event作为参数),
+如果想要显示的声明event，即在前面加一个@。</p>
+
+<p>vue对象的methods属性</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>		methods:{
+					showInfo1(){
+						alert("同学你好！");
+					},
+					showInfo2(event,num){
+						alert(event);
+					}
+				}
+</code></pre></div></div>
+
+<p>vue对象中具有methods属性，其中具有对应方法。
+  <br /><br /></p>
+
+<h3 id="2事件修饰符">2.事件修饰符</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="http://www.baidu.com @click.prevent.stop="showInfo"&gt;&lt;/a&gt;
+</code></pre></div></div>
+<p>其中prevent,stop是事件修饰符。
+prevent阻止默认行动，stop阻止冒泡传递。
+修饰符可以连续写！！！</p>
+
+<h3 id="3键盘事件">3.键盘事件</h3>
+<p>分为keyup, keydown两种，后面可接具体行为</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@keyup.ctrl = "showInfo"
+@keyup.ctrl.y = "showInfo"
+</code></pre></div></div>
+:ET
